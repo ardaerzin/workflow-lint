@@ -1,0 +1,8 @@
+**/docs/
+dist/
+
+apps/storybook/public/
+.next
+.vercel
+
+node_modules/
