@@ -11,4 +11,4 @@ jobs:
       - name: Install modules
         run: yarn
       - name: Run eslint on changed files
-        run: bash .scripts/lintCheck.sh ${{ github.token }}
+        run: sh .scripts/lintCheck.sh ${{ github.token }}
