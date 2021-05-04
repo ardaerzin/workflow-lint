@@ -12,3 +12,4 @@ jobs:
         run: yarn
       - name: Run eslint on changed files
         run: sh .scripts/lintCheck.sh ${{ github.token }}
+        

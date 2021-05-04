@@ -18,8 +18,6 @@ HEAD_SHA=$(git rev-parse "${TARGET_BRANCH}" || true)
 
 FILES=$(git diff --diff-filter=ACMRT --name-only "${HEAD_SHA}" || true)
 
-echo "What are files? ${FILES}"
-
 if [[ -n ${FILES} ]]; then
   CHANGED_FILES=$(echo "${FILES}" | grep -E ".*\.(${EXTENSIONS})$" | grep -v json)
 
@@ -33,6 +31,6 @@ if [[ -n ${FILES} ]]; then
     echo "$CHANGED_FILES"
     echo "--------------------"
     echo ""
-    yarn run eslint --config=./eslintrc $CHANGED_FILES
+    yarn run eslint --config=./.eslintrc $CHANGED_FILES
   fi
 fi
