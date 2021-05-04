@@ -2,7 +2,7 @@ const Foo = () => {
   console.log('foo')
   return (
     <div>
-      Foo
+      Foo awesome
     </div>
   )
 }
